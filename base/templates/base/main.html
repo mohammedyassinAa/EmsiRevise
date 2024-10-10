@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+{% comment %} Load my static files : {% endcomment %}
+{% load static %}
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Emsi Revise </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% comment %} <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script> {% endcomment %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+    {% comment %} <script src="main.js"></script>  {% endcomment %}
 </head>
 <body>
     <h1>Welcome to main template <strong></h1>
